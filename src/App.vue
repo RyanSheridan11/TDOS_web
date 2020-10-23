@@ -1,9 +1,12 @@
 <template>
-    <header id="nav">
-        <router-link :to="{ name: 'Home'}">TDOS</router-link> |
-        <router-link :to="{ name: 'Home'}" >Projects</router-link> |
-        <router-link :to="{ name: 'About'}"> About</router-link> |
-        <router-link :to="{ name: 'Store'}">Store</router-link>
+    <header>
+            <router-link class="nav-link" :to="{name: 'Home'}"><img id="site-logo" src="@/assets/tdos_logo.png" /></router-link>
+            <div class="header-section-right">
+                <router-link class="nav-link" :to="{ name: 'Home'}">Projects</router-link> |
+                <router-link class="nav-link" :to="{ name: 'About'}"> About</router-link> |
+                <router-link class="nav-link" :to="{ name: 'Store'}">Store</router-link> |
+                <router-link class="nav-link" :to="{ name: 'Test'}">Test</router-link>
+            </div>
     </header>
     <router-view />
     <footer class="site-footer">
@@ -15,24 +18,54 @@
 </template>
 
 <style>
+
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Open Sans", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
+  color: #333;
+}
+html{ 
+    scroll-behavior: smooth;
+}
+main {
+    padding-top:0px;
+    height: 100%;
+    width: 100%;
+}
+#site-logo {
+    width: 60px; 
+    height: auto; 
+    float: left; 
+    padding-left: 0px;
 }
 
 #nav {
-  padding: 30px;
+    display: block;
 }
+header {
+    height: 37px;
+    margin: 0px 30px;
+    background-color: #fafafa;
+}
+    
+ .header-section-left{
+ }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+ .header-section-right{
+     font-weight: 300;
+     font-style: normal;
+     letter-spacing: 1px;
+     float: right;
+ }
+    /*
+    #nav a {
+        font-weight: bold;
+        color: #2c3e50;
+        }-->
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+        <!--#nav a.router-link-exact-active {
+        color: #42b983;
+        }-->
+    */
 </style>

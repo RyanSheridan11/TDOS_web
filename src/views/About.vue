@@ -18,3 +18,12 @@
         </ul>
     </div>
 </template>
+
+<style>
+    .contact-images {
+        height: 100px;
+        width: auto;
+    }
+
+
+</style>
