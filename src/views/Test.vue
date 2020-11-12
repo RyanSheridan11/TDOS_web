@@ -102,6 +102,14 @@
 
 
 					},
+					backgroundMask: {
+						enable: true,
+						cover: {
+							color: {
+								value: '#fafafa'
+							}
+						}
+					},
 					background: {
 						image: 'url(assets/table.jpg)'
 					},
