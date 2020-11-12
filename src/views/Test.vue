@@ -9,7 +9,7 @@
 						events: {
 							onClick: {
 								enable: true,
-								mode: 'remove'
+								mode: 'push'
 							},
 							onHover: {
 								enable: true,
@@ -106,7 +106,7 @@
 						enable: true,
 						cover: {
 							color: {
-								value: '#fafafa'
+								value: '#2f4454'
 							}
 						}
 					},
