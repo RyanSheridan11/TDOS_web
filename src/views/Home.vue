@@ -4,6 +4,7 @@
             <img alt="Our first table" src="@/assets/table.jpg">
             <img id="project2" alt="Our second table" src="@/assets/table2.jpg">
             <img alt="Our third table" src="@/assets/table3.jpg">
+						Hello
         </main>
 
         <!--<HelloWorld msg="Welcome to Your Vue.js App"/>-->
