@@ -35,7 +35,7 @@
 					},
 					particles: {
 						number: {
-							value: 80,
+							value: 120,
 							density: {
 								enable: true,
 								value_area: 800
@@ -99,8 +99,6 @@
 								rotateY: 1200
 							}
 						},
-
-
 					},
 					backgroundMask: {
 						enable: true,
@@ -113,35 +111,34 @@
 					background: {
 						image: 'url(assets/table.jpg)'
 					},
-
 					detectRetina: true
-				}"/>
+				}"
+			/>
 			<img id="background-pic" alt="Our first table" src="@/assets/table.jpg">
 
 			<div id="menuToggle">
 				<input type="checkbox" />
-
 				<span></span>
 				<span></span>
 				<span></span>
 				<ul id="menu">
-					<a href="#"><li>Home</li></a>
-					<a href="#"><li>About</li></a>
-					<a href="#"><li>Info</li></a>
-					<a href="#"><li>Contact</li></a>
+					<li> <router-link class="nav-link" :to="{ name: 'Home'}">projects</router-link> . <router-link class="nav-link" :to="{ name: 'About'}"> about</router-link> . <router-link class="nav-link" :to="{ name: 'Store'}">store</router-link> . <router-link class="nav-link" :to="{ name: 'Test'}">test</router-link></li>
 				</ul>
 			</div>
-
     </div>
 </template>
 
 <style>
+	#site-logo {
+		z-index: 4;
+		position: absolute;
+	}
 	#menuToggle	{
 		display: block;
 		position: fixed;
 		top: 40px;
 		right: 50px;
-		z-index: 2;
+		z-index: 3;
 		-webkit-user-select: none;
 		user-select: none;
 	}
@@ -159,17 +156,18 @@
 		height: 32px;
 		position: absolute;
 		top: -7px;
-		left: -5px;
+		/* left: -5px; */
+		right: -30px;
 		cursor: pointer;
 
 		opacity: 0; /* hide this */
-		z-index: 3; /* and place it over the hamburger */
-
+		z-index: 4; /* and place it over the hamburger */
 		-webkit-touch-callout: none;
 	}
 
 	#menuToggle span {
 		display: block;
+		right: -25px;
 		width: 33px;
 		height: 4px;
 		margin-bottom: 5px;
@@ -203,17 +201,16 @@
 	#menu {
 		position: absolute;
 		width: 300px;
-		margin: -100px 0 0 -50px;
-		padding: 50px;
-		padding-top: 125px;
+		margin: -53px 0 0 0;
+		padding: 10px;
 
-		background: #ededed;
 		list-style-type: none;
 		-webkit-font-smoothing: antialiased;
 		/* to stop flickering of text in safari */
 
 		transform-origin: 0% 0%;
-		transform: translate(100%, 0);
+		right: -20px;
+		transform: translate(120%, 0);
 
 		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 	}
@@ -225,8 +222,7 @@
 		transform: none;
 	}
 	#tsparticles {
-		visibility: hidden;
-		z-index: -1;
+		z-index: 2;
 		position: fixed;
 		left: 0;
 		top: 0;
@@ -243,9 +239,9 @@
 		top: 0;
 		width: 100vw;
 		height: 100vh;
-		z-index: -2;
+		z-index: 1;
 	}
 	footer, header {
-		visibility: hidden;
+		z-index: -3;
 	}
 </style>
