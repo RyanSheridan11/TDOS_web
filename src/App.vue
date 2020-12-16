@@ -14,7 +14,7 @@
             <div class="row">
                 <div class="footer-column-1">
                     <div class="footer-title">
-                        <router-link class="nav-link" id="footer-title-text" to="{name: 'Contact'}">Contact_</router-link>
+                        <router-link class="nav-link" id="footer-title-text" :to="{ name: 'Contact'}">Contact_</router-link>
                     </div>
                     <p class="footer-text">
 
