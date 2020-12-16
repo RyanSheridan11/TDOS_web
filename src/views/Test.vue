@@ -115,16 +115,16 @@
 					},
 
 					detectRetina: true
-				}"
-			/>
-			<img alt="Our first table" src="@/assets/table.jpg">
+				}"/>
+			<img id="background-pic" alt="Our first table" src="@/assets/table.jpg">
     </div>
 </template>
 
 
 <style>
+
     #tsparticles {
-        z-index: 2;
+        z-index: -1;
         position: fixed;
         left: 0;
         top: 0;
@@ -135,16 +135,14 @@
         background-size: cover;
         background-position: 50% 50%;
     }
-		img {
+		#background-pic {
+			/* visibility: hidden; */
 			position: fixed;
 			left: 0;
 			top: 0;
 			width: 100vw;
 			height: 100vh;
-			z-index: 1;
+			z-index: -2;
 		}
-    header, footer {
-        visibility: hidden;
-    }
 
 </style>

@@ -1,12 +1,12 @@
 <template>
     <header>
-            <router-link class="nav-link" :to="{name: 'Home'}"><img id="site-logo" src="@/assets/tdos_logo.png" /></router-link>
-            <div class="header-section-right">
-                <router-link class="nav-link" :to="{ name: 'Home'}">projects</router-link> . 
-                <router-link class="nav-link" :to="{ name: 'About'}"> about</router-link> . 
-                <router-link class="nav-link" :to="{ name: 'Store'}">store</router-link> . 
-                <router-link class="nav-link" :to="{ name: 'Test'}">test</router-link>
-            </div>
+        <router-link class="nav-link" :to="{name: 'Home'}"><img id="site-logo" src="@/assets/tdos_logo.png" /></router-link>
+        <div class="header-section-right">
+            <router-link class="nav-link" :to="{ name: 'Home'}">projects</router-link> .
+            <router-link class="nav-link" :to="{ name: 'About'}"> about</router-link> .
+            <router-link class="nav-link" :to="{ name: 'Store'}">store</router-link> .
+            <router-link class="nav-link" :to="{ name: 'Test'}">test</router-link>
+        </div>
     </header>
     <router-view />
     <footer class="site-footer">
