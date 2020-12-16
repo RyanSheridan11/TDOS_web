@@ -16,9 +16,14 @@
                     <div class="footer-title">
                         <router-link class="nav-link" id="footer-title-text" to="{name: 'Contact'}">Contact_</router-link>
                     </div>
-                    <p>
+                    <p class="footer-text">
+
                         hello@tdos.nz
+                        </p>
+                    <p class="footer-text">
                         +64 (0) 123 4567
+                        </p>
+                    <p class="footer-text">
                         aro valley, wellington
                     </p>
                 </div>
@@ -56,7 +61,7 @@ main {
     width: 100px; 
     height: auto; 
     float: left; 
-    padding-left: 100px;
+    padding-left: 50px;
     padding-top:10px
 }
 
@@ -64,9 +69,9 @@ main {
     display: block;
 }
 header {
-    height: 40px;
-    margin: 0px 20px;
-    
+    height: 60px;
+    margin: 0px 10px;
+    border-bottom: solid 2px;
     
 }
 header p:hover{
@@ -96,16 +101,16 @@ header .nav-link{
 
  footer{
      height:200px;
-     margin:0px 30px;
+     margin:0px 10px;
      
      overflow:hidden;
      border-top:solid 2px;
  }
  .footer-column-1{
      float:left;
-     width:10%;
-     border-right:solid 0px;
+     width:250px;
      font-weight:500;
+     margin-left:30px;
  }
  footer .nav-link {
      padding-top:0px;
@@ -116,6 +121,11 @@ header .nav-link{
         text-decoration: none;
         color:#ffffff;
  }
+ .footer-text{
+     padding-top:0px;
+     margin-top:0px;
+     margin-bottom:0px;
+ }
     .footer-title{
         padding-top:30px;
         font-weight:600;
@@ -123,9 +133,11 @@ header .nav-link{
         letter-spacing:1px;
         font-size:20px;
         color:#ffffff;
+        padding-bottom:10px;
+        margin-bottom:10px;
     }
     .footer-column-1 p{
-        padding-top:10px;
+        padding-top:0px;
         letter-spacing:1px;
 
     }
