@@ -3,7 +3,6 @@
         <main>
             <div class="form-container">
                 <form>
-
                     <label for="name">Full Name</label>
                     <input type="text" id="fname" name="fullname" placeholder="Enter your name*" />
 
