@@ -9,7 +9,7 @@
 				<span></span>
 				<span></span>
 				<ul id="menu">
-					<li> <router-link class="nav-link" :to="{ name: 'Home'}">projects</router-link> . <router-link class="nav-link" :to="{ name: 'About'}"> about</router-link> . <router-link class="nav-link" :to="{ name: 'Store'}">store</router-link> . <router-link class="nav-link" :to="{ name: 'Test'}">test</router-link></li>
+					<li> <router-link class="nav-link" :to="{ name: 'Home'}">projects</router-link> . <router-link class="nav-link" :to="{ name: 'About'}"> team</router-link> . <router-link class="nav-link" :to="{ name: 'Store'}">store</router-link> . <router-link class="nav-link" :to="{ name: 'Test'}">test</router-link></li>
 				</ul>
 			</div>
     </header>
@@ -57,12 +57,12 @@
 	body {
 		margin:0;
 		padding:0;
-		background:#2f4454;
+		background:#1A1A1D;
 	}
 	main {
 		height: 100%;
 		width: 100%;
-		background:#2f4454;
+		background:#1A1A1D;
 	}
 	#site-logo {
 		z-index: 4;
@@ -70,8 +70,8 @@
 		width: 100px;
 		height: auto;
 		float: left;
-		padding-left: 50px;
-		padding-top:10px
+		padding-left: 100px;
+		padding-top:20px;
 	}
 	#nav {
 		display: block;
@@ -79,19 +79,22 @@
 	#menuToggle	{
 		display: block;
 		position: fixed;
-		top: 40px;
+		top: 50px;
 		right: 50px;
 		z-index: 3;
 		-webkit-user-select: none;
 		user-select: none;
 	}
+    #menu {
+        color: #c3073f;
+    }
 	#menuToggle a	{
 		text-decoration: none;
-		color: #232323;
+		color: #ffffff;
 		transition: color 0.3s ease;
 	}
 	#menuToggle a:hover	{
-		color: tomato;
+		color: #95074d;
 	}
 	#menuToggle input	{
 		display: block;
@@ -107,7 +110,6 @@
 		z-index: 4; /* and place it over the hamburger */
 		-webkit-touch-callout: none;
 	}
-
 	#menuToggle span {
 		display: block;
 		right: -25px;
@@ -132,7 +134,7 @@
 	#menuToggle input:checked ~ span {
 		opacity: 1;
 		transform: rotate(45deg) translate(-2px, -1px);
-		background: #232323;
+		background: #4e4e50;
 	}
 	#menuToggle input:checked ~ span:nth-last-child(3) {
 		opacity: 0;
@@ -169,7 +171,7 @@
 		margin:0px 10px;
 
 		overflow:hidden;
-		border-top:solid 2px;
+		border-top:solid 2px #ffffff;
 	}
 	.footer-column-1 {
 		float:left;

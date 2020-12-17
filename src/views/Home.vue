@@ -104,7 +104,7 @@
 						enable: true,
 						cover: {
 							color: {
-								value: '#2f4454'
+								value: '#1A1A1D'
 							}
 						}
 					},
