@@ -35,7 +35,7 @@
 					},
 					particles: {
 						number: {
-							value: 120,
+							value: 250,
 							density: {
 								enable: true,
 								value_area: 800
