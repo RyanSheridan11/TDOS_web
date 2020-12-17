@@ -1,6 +1,6 @@
 <template>
     <div id="store">
-
+			<h1 id="store-header">Store</h1>
         <main>
             Hello
         </main>
@@ -16,3 +16,12 @@ export default {
     //HelloWorld
   }
 }</script>
+
+<style>
+#store-header {
+	position: fixed;
+	top: 0px;
+	left: 200px;
+}
+
+</style>

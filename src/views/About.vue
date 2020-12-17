@@ -1,6 +1,6 @@
 <template>
     <div class="about">
-        <h1>This is an about page</h1>
+        <h1 id="about-header">About Us</h1>
         <ul>
             <li>
                 <h5>aidan</h5>
@@ -20,10 +20,15 @@
 </template>
 
 <style>
-    .contact-images {
-        height: 100px;
-        width: auto;
-    }
+	#about-header {
+		position: fixed;
+		top: 0px;
+		left: 200px;
+	}
+  .contact-images {
+      height: 100px;
+      width: auto;
+  }
 
 
 </style>
