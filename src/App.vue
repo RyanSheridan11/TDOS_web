@@ -176,7 +176,6 @@
 	.footer-column-1 {
 		float:left;
 		width:250px;
-		font-weight:500;
 		margin-left:30px;
 	}
 	footer .nav-link {
@@ -187,21 +186,23 @@
 		border-radius: 20px;
 		text-decoration: none;
 		color:#ffffff;
+		margin-bottom:20px;
 	}
 	.footer-text {
-		padding-top:0px;
-		margin-top:0px;
+		padding-top:10px;
+		margin-top:10px;
 		margin-bottom:0px;
+		font-weight:300;
 	}
 	.footer-title {
 		padding-top:30px;
-		font-weight:600;
+		font-weight:700;
 		font-style:normal;
 		letter-spacing:1px;
-		font-size:20px;
+		font-size:30px;
 		color:#ffffff;
 		padding-bottom:10px;
-		margin-bottom:10px;
+		margin-bottom:30px;
 	}
 	.footer-column-1 p {
 		padding-top:0px;

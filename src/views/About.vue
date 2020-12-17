@@ -1,6 +1,19 @@
 <template>
     <div class="about">
-        <h1 id="about-header">About Us</h1>
+        <h1 id="about-header">About_</h1>
+        <div class="what-we-do">
+            <div class="container">
+                <p>
+                    blah blah
+                    blah
+                    blha
+                </p>
+
+            </div>
+
+
+
+        </div>
         <ul>
             <li>
                 <h5>aidan</h5>
@@ -22,8 +35,9 @@
 <style>
 	#about-header {
 		position: fixed;
-		top: 0px;
-		left: 200px;
+		top: 100px;
+		left: 50px;
+        margin-bottom:10px;
 	}
   .contact-images {
       height: 100px;
