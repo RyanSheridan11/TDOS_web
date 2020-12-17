@@ -1,12 +1,17 @@
 <template>
     <header>
-        <router-link class="nav-link" :to="{name: 'Home'}"><img id="site-logo" src="@/assets/tdos_logo.png" /></router-link>
-        <div class="header-section-right">
-            <router-link class="nav-link" :to="{ name: 'Home'}">projects</router-link> .
-            <router-link class="nav-link" :to="{ name: 'About'}"> about</router-link> .
-            <router-link class="nav-link" :to="{ name: 'Store'}">store</router-link> .
-            <router-link class="nav-link" :to="{ name: 'Test'}">test</router-link>
-        </div>
+			<div id="">
+				<router-link class="nav-link" :to="{name: 'Home'}"><img id="site-logo" src="@/assets/tdos_logo.png" /></router-link>
+			</div>
+			<div id="menuToggle">
+				<input type="checkbox" />
+				<span></span>
+				<span></span>
+				<span></span>
+				<ul id="menu">
+					<li> <router-link class="nav-link" :to="{ name: 'Home'}">projects</router-link> . <router-link class="nav-link" :to="{ name: 'About'}"> about</router-link> . <router-link class="nav-link" :to="{ name: 'Store'}">store</router-link> . <router-link class="nav-link" :to="{ name: 'Test'}">test</router-link></li>
+				</ul>
+			</div>
     </header>
     <router-view />
     <footer class="site-footer">
@@ -42,6 +47,10 @@
 		-moz-osx-font-smoothing: grayscale;
 		color: #ffffff;
 	}
+	header {
+		height: 80px;
+		z-index: 4;
+	}
 	html{
 		scroll-behavior: smooth;
 	}
@@ -56,6 +65,8 @@
 		background:#2f4454;
 	}
 	#site-logo {
+		z-index: 4;
+		position: absolute;
 		width: 100px;
 		height: auto;
 		float: left;
@@ -65,30 +76,93 @@
 	#nav {
 		display: block;
 	}
-	header {
-		height: 60px;
-		margin: 0px 10px;
-		border-bottom: solid 2px;
+	#menuToggle	{
+		display: block;
+		position: fixed;
+		top: 40px;
+		right: 50px;
+		z-index: 3;
+		-webkit-user-select: none;
+		user-select: none;
 	}
-	header p:hover{
-		color:rgba(0,0,0,.5);
+	#menuToggle a	{
+		text-decoration: none;
+		color: #232323;
+		transition: color 0.3s ease;
 	}
-	header .nav-link{
-		text-decoration:none;
-		color:#ffffff;
+	#menuToggle a:hover	{
+		color: tomato;
 	}
-	.header-section-left{
+	#menuToggle input	{
+		display: block;
+		width: 40px;
+		height: 32px;
+		position: absolute;
+		top: -7px;
+		/* left: -5px; */
+		right: -30px;
+		cursor: pointer;
+
+		opacity: 0; /* hide this */
+		z-index: 4; /* and place it over the hamburger */
+		-webkit-touch-callout: none;
 	}
-	.header-section-right {
-		font-weight: 300;
-		font-style: normal;
-		letter-spacing: 1px;
-		float: right;
-		padding-top:30px;
-		font-size:20px;
-		text-decoration:none;
-		color:#da7b93;
-		padding-right:50px;
+
+	#menuToggle span {
+		display: block;
+		right: -25px;
+		width: 33px;
+		height: 4px;
+		margin-bottom: 5px;
+		position: relative;
+		background: #cdcdcd;
+		border-radius: 3px;
+		z-index: 2;
+		transform-origin: 4px 0px;
+		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+		background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+		opacity 0.55s ease;
+	}
+	#menuToggle span:first-child {
+		transform-origin: 0% 0%;
+	}
+	#menuToggle span:nth-last-child(2) {
+		transform-origin: 0% 100%;
+	}
+	#menuToggle input:checked ~ span {
+		opacity: 1;
+		transform: rotate(45deg) translate(-2px, -1px);
+		background: #232323;
+	}
+	#menuToggle input:checked ~ span:nth-last-child(3) {
+		opacity: 0;
+		transform: rotate(0deg) scale(0.2, 0.2);
+	}
+	#menuToggle input:checked ~ span:nth-last-child(2) {
+		transform: rotate(-45deg) translate(0, -1px);
+	}
+	#menu {
+		position: absolute;
+		width: 300px;
+		margin: -53px 0 0 0;
+		padding: 10px;
+
+		list-style-type: none;
+		-webkit-font-smoothing: antialiased;
+		/* to stop flickering of text in safari */
+
+		transform-origin: 0% 0%;
+		right: -20px;
+		transform: translate(120%, 0);
+
+		transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+	}
+	#menu li {
+		padding: 10px 0;
+		font-size: 22px;
+	}
+	#menuToggle input:checked ~ ul {
+		transform: none;
 	}
 	footer {
 		height:200px;
