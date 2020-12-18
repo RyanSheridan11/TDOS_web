@@ -1,6 +1,19 @@
 <template>
     <div class="about">
-        <h1 id="about-header">About Us</h1>
+        <h1 id="about-header">About_</h1>
+        <div class="what-we-do">
+            <div class="container">
+                <p>
+                    blah blah
+                    blah
+                    blha
+                </p>
+
+            </div>
+
+
+
+        </div>
         <ul>
             <li>
                 <h5>aidan</h5>
