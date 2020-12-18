@@ -171,7 +171,7 @@
 		margin:0px 10px;
 		position: absolute;
 		bottom: -202px;/* 2 px for the border, 200 for the height of the footer   */
-
+		z-index: 3;
 		overflow:hidden;
 		border-top:solid 2px #ffffff;
 	}
