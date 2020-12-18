@@ -21,9 +21,9 @@
 
 <style>
 	#about-header {
-		position: fixed;
-		top: 0px;
-		left: 200px;
+		position: absolute;
+		top: 15px;
+		left: 250px;
 	}
   .contact-images {
       height: 100px;

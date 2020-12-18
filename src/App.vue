@@ -169,6 +169,8 @@
 	footer {
 		height:200px;
 		margin:0px 10px;
+		position: absolute;
+		bottom: -202px;/* 2 px for the border, 200 for the height of the footer   */
 
 		overflow:hidden;
 		border-top:solid 2px #ffffff;

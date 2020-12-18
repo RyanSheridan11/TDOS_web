@@ -54,7 +54,7 @@
 								nb_sides: 5
 							},
 							image: {
-								src: '@/assets/table.jpg',
+								src: '@/assets/tables/table.jpg',
 								width: 100,
 								height: 100
 							}
@@ -109,12 +109,12 @@
 						}
 					},
 					background: {
-						image: 'url(assets/table.jpg)'
+						image: 'url(assets/tables/table.jpg)'
 					},
 					detectRetina: true
 				}"
 			/>
-			<img id="background-pic" alt="Our first table" src="@/assets/table.jpg">
+			<img id="background-pic" alt="Our first table" src="@/assets/tables/table.jpg">
     </div>
 </template>
 
